@@ -1,4 +1,5 @@
-# Etch-a-Sketch-
+# Etch-a-Sketch
+![home](./home.png)
 ## A browser verision of an all time classic!
 Bare-bones and basic! A no frills bordem killer to make the time go by
 
