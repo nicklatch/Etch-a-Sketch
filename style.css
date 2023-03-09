@@ -42,7 +42,8 @@ a:hover {
 .footer {
     display: flex;
     justify-content: space-between;
-    width: 100%
+    width: 100%;
+    box-shadow: 0 0 5px black;
 }
 
 .header {
@@ -79,7 +80,8 @@ a:hover {
     box-shadow: 1px 1px 5px black;
     margin: 0 auto;
     margin-bottom: 50px;
-    padding: 10px
+    padding: 10px;
+    border: 1px solid black;
 }
 
 #start_button:hover {
