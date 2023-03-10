@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    border: none;
 }
 
 html,
@@ -75,7 +74,15 @@ a:hover {
 
 }
 
-#start_button {
+#button_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#size_button,
+#clear_button {
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
     margin: 0 auto;
@@ -84,11 +91,16 @@ a:hover {
     border: 1px solid black;
 }
 
-#start_button:hover {
+#size_button:hover,
+#clear_button:hover {
     scale: 1.1;
     background-color: green;
     color: white;
     border-radius: 5px;
     box-shadow: 1px 1px 10px green;
     font-weight: 500;
+}
+
+#clear_button:hover {
+    background-color: red;
 }

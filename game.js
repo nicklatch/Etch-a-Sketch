@@ -1,10 +1,20 @@
 const gridContainer = document.getElementById('grid_container');
-const button = document.getElementById('start_button');
+const sizeButton = document.getElementById('size_button');
+const clearButton = document.getElementById('clear_button')
+const cells = Array.from(document.querySelectorAll('#cell'));
 let sizeInput;
 
-button.addEventListener('click', () =>
+sizeButton.addEventListener('click', () =>
     createGrid((getGridSize()))
 );
+
+clearButton.addEventListener('click', () =>
+    clearCells()
+);
+function clearCells() {
+    createGrid(Math.pow(sizeInput, 2))
+    console.log('clicked');
+}
 
 function getGridSize() {
     sizeInput = prompt('How big do you want your canvas?(<100)', '');
